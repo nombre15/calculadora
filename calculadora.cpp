@@ -51,6 +51,7 @@ ecuacion:
     cout << "\ningresa los numeros a elevar" << endl;
     cin >> x >> y;
     sum = pow(x, y);
+    cout << "el resultado es " << endl;
    }
 
    if (thing == 6){
