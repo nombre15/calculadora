@@ -4,9 +4,11 @@
 #include <ctime>
 #include <time.h>
 #include <math.h>
+#include <windows.h>
 using namespace std;
 
 int main(){
+    SetConsoleTitle ("calculadoraaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 
     float x;
     float y;
