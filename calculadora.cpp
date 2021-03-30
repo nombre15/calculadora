@@ -10,7 +10,7 @@ using namespace std;
 int main(){
     SetConsoleTitle ("calculadoraaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 
-    float x;
+    float x, a, b, c;
     float y;
     float thing;
     float sum;
@@ -18,7 +18,7 @@ int main(){
     int y1 = y1;
 ecuacion:
    cout << "que quieres hacer?" << endl;
-   cout << "1=suma, 2=resta, 3=multiplicacion, 4=division, 5=elevar, 6=numero al azar, 7=suma de raices, 8=porcentaje, 9=raiz cuadrada, 10=logaritmo" << endl;
+   cout << "1=suma, 2=resta, 3=multiplicacion, 4=division, 5=elevar, 6=numero al azar, 7=suma de raices, 8=porcentaje, 9=raiz cuadrada, 10=logaritmo, 11=promedio 5 numeros" << endl;
    cin >> thing;
 
    if(thing == 1){
@@ -53,7 +53,6 @@ ecuacion:
     cout << "\ningresa los numeros a elevar" << endl;
     cin >> x >> y;
     sum = pow(x, y);
-    cout << "el resultado es " << endl;
    }
 
    if (thing == 6){
@@ -93,6 +92,13 @@ ecuacion:
     cout << "el resultado es " << sum << endl;
    }
 
+   if(thing == 11){
+    cout << "\ningresa los numeros para el promedio" << endl;
+    cin >> x >> y >> a >> b >> c;
+    sum = (x + y + a + b + c) / 5;
+    cout << "el promedio es " << sum << endl;
+   }
+
    else{
     cout << "\nesa no es una opcion\n" << endl;
     goto ecuacion;
@@ -100,4 +106,3 @@ ecuacion:
 
    return 0;
    }
-
